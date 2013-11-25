@@ -1,5 +1,5 @@
 class zurmo::database::mysql_server {
-    class { 'mysql::server':
+  class { 'mysql::server':
 		override_options => {
 			'mysql' => {
 				'default-character-set' => 'utf8',
@@ -13,5 +13,5 @@ class zurmo::database::mysql_server {
 				'thread_stack' => '512K',
 			},
 		},
-    }
+  }
 }
